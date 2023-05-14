@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="centro_logopedia_modulo" model="ir.module.category">
+        <field name="name">Centro de logopedia</field>
+        <field name="description">Gestión de sesiones de un centro de logopedia</field>
+        <field name="sequence">100</field>
+    </record>
+
+    <record id="centro_logopedia_users" model="res.groups">
+        <field name="name">Usuarios para consulta</field>
+        <field name="category_id" ref="centro_logopedia_modulo"/>
+        <field name="comment">Usuarios básicos del centro de logopedia</field>
+        <field name="users" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <record id="centro_logopedia_admin" model="res.groups">
+        <field name="name">Usuarios administradores</field>
+        <field name="category_id" ref="centro_logopedia_modulo"/>
+        <field name="comment">Usuarios administradores del centro de logopedia</field>  
+        <!-- Añadir los usuarios del grupo anterior --> 
+        <field name="implied_ids" eval="[(4, ref('centro_logopedia_users'))]" />
+
+        <!-- Añadir usuarios -->      
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>    
+
+</odoo>
