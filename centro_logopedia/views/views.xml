@@ -16,7 +16,7 @@
             <notebook>
               <page string="Sesiones">
                 <field name="sesiones_ids" mode="tree">
-                  <tree string="Citas">
+                  <tree string="Sesiones">
                     <field name="logopeda_id"/>
                     <field name="date"/>
                     <field name="duration"/>
@@ -59,7 +59,6 @@
                 <field name="sesiones_ids" mode="tree">
                   <tree string="Sesiones">
                     <field name="paciente_id"/>
-                    <field name="logopeda_id"/>
                     <field name="date"/>
                     <field name="duration"/>
                   </tree>
