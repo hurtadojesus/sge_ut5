@@ -35,38 +35,6 @@
       <field name="name">Pedro Ginés</field>
       <field name="phone">741852369</field>          
     </record>
-
-  <!-- REGISTROS DE SESIONES -->
-    <record id="sesion0" model="centro_logopedia.sesion">
-      <field name="date">2023-05-15 10:00:00</field>
-      <field name="logopedia_id" ref="logopeda0"/>
-      <field name="paciente_id" ref="paciente0"/>
-      <field name="duration">60</field>
-    </record>
-    <record id="sesion1" model="centro_logopedia.sesion">
-      <field name="date">2023-05-22 10:00:00</field>
-      <field name="logopedia_id" ref="logopeda0"/>
-      <field name="paciente_id" ref="paciente0"/>
-      <field name="duration">60</field>
-    </record>
-    <record id="sesion2" model="centro_logopedia.sesion">
-      <field name="date">2023-05-16 12:00:00</field>
-      <field name="logopedia_id" ref="logopeda1"/>
-      <field name="paciente_id" ref="paciente1"/>
-      <field name="duration">60</field>
-    </record>
-    <record id="sesion3" model="centro_logopedia.sesion">
-      <field name="date">2023-05-17 16:00:00</field>
-      <field name="logopedia_id" ref="logopeda2"/>
-      <field name="paciente_id" ref="paciente2"/>
-      <field name="duration">60</field>
-    </record>
-    <record id="sesion4" model="centro_logopedia.sesion">
-      <field name="date">2023-05-17 17:00:00</field>
-      <field name="logopedia_id" ref="logopeda1"/>
-      <field name="paciente_id" ref="paciente3"/>
-      <field name="duration">60</field>
-    </record>
               
   </data>
 </odoo>
