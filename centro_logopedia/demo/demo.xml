@@ -25,17 +25,14 @@
   <!-- REGISTROS DE LOGOPEDAS -->
     <record id="logopeda0" model="centro_logopedia.logopeda">
       <field name="name">Andrea García</field>
-      <field name="specialty">Disfagia</field>
       <field name="phone">654321987</field>         
     </record>
     <record id="logopeda1" model="centro_logopedia.logopeda">
       <field name="name">Pilar Contreras</field>
-      <field name="specialty">Autismo</field>
       <field name="phone">789456123</field>        
     </record>
     <record id="logopeda2" model="centro_logopedia.logopeda">
       <field name="name">Pedro Ginés</field>
-      <field name="specialty">General</field>
       <field name="phone">741852369</field>          
     </record>
 
