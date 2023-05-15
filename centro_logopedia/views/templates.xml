@@ -1,0 +1,31 @@
+<odoo>
+ 
+    	<record id="centro_logopedia_report" model="ir.actions.report" >
+        <field name="name" >Listado de sesiones </field>
+        <field name="model">centro_logopedia.sesion</field>
+        <field name="report_name">centro_logopedia.report_sesion_view</field>
+        <field name="report_file">centro_logopedia.report_sesion_view</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="binding_model_id" ref="model_centro_logopedia_sesion"/>
+        <!-- Se puede añadir print_report_name, paperformat_id, binding_model_id-->
+      </record>
+
+        <template id="report_sesion_view">
+        <!-- web.basic_layout-->
+          <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="sesion">
+              <t t-call="web.external_layout">
+                <div class="page"> 
+                  <h2>Sesión realizada: <span t-field="sesion.date" /></h2>
+                  <ul>
+                    <li><strong>Paciente:</strong><span t-field="sesion.paciente_id.name"/></li>
+                    <li><strong>Logopeda:</strong><span t-field="sesion.logopeda_id.name"/></li> 
+                    <li><strong>Duración:</strong><span t-field="sesion.duration"/></li>
+                  </ul>
+                </div>
+              </t>
+            </t>
+          </t>
+        </template>
+
+</odoo>
