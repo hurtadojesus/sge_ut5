@@ -23,7 +23,7 @@
     </record>
 
   <!-- REGISTROS DE PACIENTES -->
-    <record id="paciente0" model="centro_logopedia.paciente">
+    <!-- <record id="paciente0" model="centro_logopedia.paciente">
       <field name="name">Juan Pérez</field>
       <field name="birth_date">2003-12-28</field>
       <field name="phone">698754321</field>
@@ -46,10 +46,10 @@
       <field name="birth_date">2009-02-01</field>
       <field name="phone">768594123</field>
       <field name="sesiones_ids" eval="[(6,0, [ref('sesion4')])]" /> 
-    </record>
+    </record> -->
 
   <!-- REGISTROS DE LOGOPEDAS -->
-    <record id="logopeda0" model="centro_logopedia.logopeda">
+    <!-- <record id="logopeda0" model="centro_logopedia.logopeda">
       <field name="name">Andrea García</field>
       <field name="specialty">Disfagia</field>
       <field name="phone">654321987</field>
@@ -66,6 +66,6 @@
       <field name="specialty">General</field>
       <field name="phone">741852369</field>
       <field name="sesiones_ids" eval="[(6,0, [ref('sesion3')])]" />            
-    </record>
+    </record> -->
   </data>
 </odoo>
